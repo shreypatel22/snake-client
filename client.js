@@ -12,7 +12,11 @@ const connect = function () {
 
   conn.on('connect', () => {
     console.log("Successfully connected to game server.")
-    conn.write("Name: S1P")
+    conn.write("Name: SP");
+    // setTimeout(() => {
+    //   conn.write("Name: SP")
+    // }, 1000)
+
   })
 
   conn.on('data', (data) => {
