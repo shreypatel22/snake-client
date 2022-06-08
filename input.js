@@ -29,6 +29,14 @@ const setupInput = function (conn) {
       conn.write("Move: right");
     }
 
+    if (key === 'z') {
+      conn.write("Say: Test");
+    }
+
+    if (key === 'x') {
+      conn.write("Say: Test2");
+    }
+
 
   };
 
